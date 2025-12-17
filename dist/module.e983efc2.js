@@ -207,7 +207,7 @@
       });
     }
   }
-})({"io2N8":[function(require,module,exports,__globalThis) {
+})({"2CptB":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "ba2beaa036960861";
+module.bundle.HMR_BUNDLE_ID = "b05ffd62e983efc2";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,24 +713,17 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"bNJxx":[function(require,module,exports,__globalThis) {
-var _utilsJs = require("./utils.js");
-console.log((0, _utilsJs.a)());
-console.log((0, _utilsJs.b)());
-
-},{"./utils.js":"dScJG"}],"dScJG":[function(require,module,exports,__globalThis) {
+},{}],"7fuhs":[function(require,module,exports,__globalThis) {
+// 기본 내보내기
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "a", ()=>(0, _aJs.a));
-parcelHelpers.export(exports, "b", ()=>(0, _bJs.b));
-var _aJs = require("./a.js");
-var _bJs = require("./b.js");
-
-},{"./a.js":"e4dMW","./b.js":"3D2jS","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"e4dMW":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "a", ()=>a);
-const a = ()=>123;
+parcelHelpers.export(exports, "str", ()=>str);
+parcelHelpers.export(exports, "arr", ()=>arr);
+parcelHelpers.export(exports, "hello", ()=>hello);
+exports.default = 123;
+const str = 'ABC';
+const arr = [];
+const hello = ()=>{};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
@@ -762,12 +755,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"3D2jS":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "b", ()=>b);
-const b = ()=>456;
+},{}]},["2CptB"], null, "parcelRequire635e", {})
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["io2N8","bNJxx"], "bNJxx", "parcelRequire635e", {})
-
-//# sourceMappingURL=251217_js-study.36960861.js.map
+//# sourceMappingURL=module.e983efc2.js.map
