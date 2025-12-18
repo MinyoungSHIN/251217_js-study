@@ -714,60 +714,17 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"bNJxx":[function(require,module,exports,__globalThis) {
-var _utilsJs = require("./utils.js");
-console.log((0, _utilsJs.a)());
-console.log((0, _utilsJs.b)());
-
-},{"./utils.js":"dScJG"}],"dScJG":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "a", ()=>(0, _aJs.a));
-parcelHelpers.export(exports, "b", ()=>(0, _bJs.b));
-var _aJs = require("./a.js");
-var _bJs = require("./b.js");
-
-},{"./a.js":"e4dMW","./b.js":"3D2jS","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"e4dMW":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "a", ()=>a);
-const a = ()=>123;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
+// 콜백 패턴
+const getMovies = (movieName, callback)=>{
+    fetch(`https://www.omdbapi.com/?apikey=7035c60c&s=${movieName}`).then((res)=>res.json()).then((res)=>{
+        console.log(res);
+        callback();
     });
 };
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
+getMovies('frozen', ()=>{
+    console.log("\uACA8\uC6B8\uC655\uAD6D");
+});
 
-},{}],"3D2jS":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "b", ()=>b);
-const b = ()=>456;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["io2N8","bNJxx"], "bNJxx", "parcelRequire635e", {})
+},{}]},["io2N8","bNJxx"], "bNJxx", "parcelRequire635e", {})
 
 //# sourceMappingURL=251217_js-study.36960861.js.map
